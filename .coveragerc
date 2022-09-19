@@ -1,0 +1,3 @@
+[run]
+omit = requests/packages/*
+       requests/certs.py
