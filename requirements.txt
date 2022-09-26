@@ -5,3 +5,4 @@ idna~=3.4
 certifi~=2022.9.24
 setuptools~=60.2.0
 xmltodict~=0.13.0
+werkzeug==2.0.3
