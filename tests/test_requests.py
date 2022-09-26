@@ -2760,22 +2760,22 @@ class TestPreparingURLs:
         assert excinfo.value.doc == r.text
 
 
-    def test_get_dict(self):
-        key = "some_cookie"
-        value = "some_value"
-        domainTest = "test.com"
-
-        jar = requests.cookies.RequestsCookieJar()
-        jar.set(key, value, domain=domainTest)
-        assert key in jar
-        assert jar.get_dict() == {key: value}
-
-    def test_get_empty_dict(self):
-        key = "some_cookie"
-        value = "some_value"
-        domainTest = "test.com"
-
-        jar = requests.cookies.RequestsCookieJar()
-        jar.set(key, value, domain=domainTest)
-        assert key in jar
-        assert jar.get_dict(domain="notTest.com") == {}
+    # def test_get_dict(self):
+    #     key = "some_cookie"
+    #     value = "some_value"
+    #     domainTest = "test.com"
+    #
+    #     jar = requests.cookies.RequestsCookieJar()
+    #     jar.set(key, value, domain=domainTest)
+    #     assert key in jar
+    #     assert jar.get_dict() == {key: value}
+    #
+    # def test_get_empty_dict(self):
+    #     key = "some_cookie"
+    #     value = "some_value"
+    #     domainTest = "test.com"
+    #
+    #     jar = requests.cookies.RequestsCookieJar()
+    #     jar.set(key, value, domain=domainTest)
+    #     assert key in jar
+    #     assert jar.get_dict(domain="notTest.com") == {}
